@@ -102,7 +102,7 @@ function StellarMissions:loop()
     WKSHud:wait_until_ready()
 
     Ferret:wait(self.wait_timers.pre_open_mission_list)
-    WKSMission:open_basic_missions()
+	WKSMission:open()
     Ferret:wait(self.wait_timers.post_open_mission_list)
 
     local available_missions = WKSMission:get_available_missions()
